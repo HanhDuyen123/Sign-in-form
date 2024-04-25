@@ -7,7 +7,15 @@ function changePass(){
         password.type = 'text';
     }
 }
-
+function changePass2(){
+    let password = document.getElementById('re-password');
+    if(password.type == 'text'){
+        password.type = 'password';
+    }
+    else{
+        password.type = 'text';
+    }
+}
 function Redic(){
     window.location = "formdangki.html";
 }
