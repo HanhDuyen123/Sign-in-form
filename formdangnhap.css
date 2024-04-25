@@ -1,0 +1,106 @@
+body{
+    background-color: #252A3F;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+.signinContainer{
+    background-color: #333F6A;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    padding: 30px 30px 50px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+.signinContainer .logo img{
+    width: 70%;
+}
+.form{
+    background-color: #f5f5f5;
+    padding: 5px 20px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+.form::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #ffffff66;
+    left: 5%;
+    top: -10px;
+    border-radius: 20px;
+    z-index: -1;
+}
+.group{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px auto;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #555;
+}
+.group:nth-child(1){
+    grid-template-columns: 100%;
+    border-bottom: none;
+}
+.group input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.group label{
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    transition: 0.5s;
+}
+.group input:focus ~ label,
+.group input:not(:placeholder-shown) ~ label{
+    top: -20px;
+}
+.group:nth-child(3){
+    grid-template-columns: 30px auto 30px;
+}
+.group:nth-child(3) input[type="password"] ~ .eye-outline{
+    display: none;
+}
+
+.group:nth-child(3) input[type="text"] ~ .eye-off-outline{
+    display: none;
+}
+.signin{
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    color: #333F6A;
+    border: 1px solid #555;
+    text-decoration: none;
+    padding: 7px;
+}
+a:hover{
+    background-color: #555;
+    color: #f5f5f5;
+}
+.form-signin{
+    background: transparent;
+    border: 1px solid #333F6A;
+    color: #252A3F;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+.form-signin:hover{
+    background-color: #555;
+    color: #f5f5f5;
+}
