@@ -1,12 +1,4 @@
-body{
-    background-color: #252A3F;
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #555;
-}
+
 .signinContainer{
     background-color: #333F6A;
     width: 300px;
